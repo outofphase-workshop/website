@@ -63,8 +63,8 @@ body {
 }
 
 .sep {
-  width: 0.9em;      /* scales with the text size */
-  height: 0.9em;
+  width: 1em;      /* scales with the text size */
+  height: 1em;
   vertical-align: middle;
   margin: 0 0.4em;   /* replaces the old space-space around ◆ */
   display: inline-block;
@@ -148,6 +148,7 @@ main {
   }
   .info {
     font-size: 0.85rem;
+    max-width: 320px;
   }
   main {
     padding: 16px;
