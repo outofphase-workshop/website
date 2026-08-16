@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Out of Phase Guitar Workshop</title>
+<title>Contact — Out of Phase</title>
 <link rel="stylesheet" href="style-shared.css">
-<link rel="stylesheet" href="style-home.css">
+<link rel="stylesheet" href="style-contact.css">
 </head>
-<body class="splash-body">
+<body class="contact-body">
 
-<!-- Mobile Sticky Header (ADDED THIS HERE) -->
+<!-- Mobile Sticky Header -->
 <header class="mobile-header">
   <button class="menu-toggle-btn" id="menuToggleBtn">Menu</button>
 </header>
@@ -19,12 +19,12 @@
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="active">Contact</a>
 </header>
 
 <!-- Mobile Overlay Drawer (Contains Nav + Footer links) -->
 <div class="mobile-drawer" id="mobileDrawer">
-  
+    
   <header class="drawer-header">
     <button class="drawer-close-btn" id="drawerCloseBtn">Close</button>
   </header>
@@ -34,7 +34,7 @@
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
 
     <div class="drawer-footer-links">
@@ -50,8 +50,51 @@
   </div>
 </div>
 
-<main class="splash-hero">
-  <img src="images/oop_logo.svg" alt="Out of Phase Guitar Workshop" class="splash-logo">
+<main class="contact-content">
+  <div class="contact-grid">
+
+    <p class="contact-intro">
+      I work through appointment only from my workshop in St. George, Bristol,
+      where I carry out all the guitar work. Every instrument that comes through
+      the workshop is different, and each project is approached with care,
+      patience, and attention to detail. I also video record my work and share
+      at the end, giving you a behind-the-scenes look at the process and a
+      detailed account of the work carried out.
+    </p>
+    <p class="contact-intro">
+      If you would like to discuss your requirements, just send me an e-mail
+      and I will get back to you as swiftly as I can.
+    </p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <h3 class="contact-label">Location</h3>
+        <p>St. George, Bristol, BS5</p>
+      </div>
+
+      <div class="contact-item">
+        <h3 class="contact-label">E-mail</h3>
+        <p><a href="mailto:info@outofphase.cc">info@outofphase.cc</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="brand-strip">
+    <div class="marquee">
+      <div class="marquee-track">
+        <div class="group">
+          <img src="images/separator.svg" class="sep">
+          <img src="images/separator.svg" class="sep">
+          <img src="images/separator.svg" class="sep">
+        </div>
+        <div class="group">
+          <img src="images/separator.svg" class="sep">
+          <img src="images/separator.svg" class="sep">
+          <img src="images/separator.svg" class="sep">
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <!-- Mobile Sticky Centered Logo -->
@@ -71,7 +114,7 @@
 </footer>
 
 <script>
-  // Mobile Drawer Toggle Script
+  // 1. Mobile Drawer Toggle Script
   document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menuToggleBtn');
     const closeBtn = document.getElementById('drawerCloseBtn');

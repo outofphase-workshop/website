@@ -1,0 +1,167 @@
+/* ============================
+   CONTACT PAGE
+============================ */
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+}
+
+.contact-content {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 80px;   
+  margin-bottom: 80px;
+}
+
+.contact-grid {
+  max-width: 800px;
+  margin: 0 auto 100px auto;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.contact-intro {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 520px;       /* Adjust this value (e.g., 480px–560px) to your taste */
+  margin-left: auto;     /* Centers the left-aligned paragraph block */
+  margin-right: auto;
+  text-align: left;
+}
+
+.contact-intro:last-of-type {
+  margin-bottom: 70px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contact-label {
+  font-family: "Gothic", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+}
+
+.contact-item p {
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+}
+
+.contact-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.contact-item a:hover {
+  opacity: 0.6;
+}
+
+/* ============================
+   BRAND STRIP
+============================ */
+.brand-strip {
+  background: #FAFAFA;
+  overflow: hidden;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 180s linear infinite;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sep {
+  height: 90px;
+  width: auto;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 700px) {
+  .contact-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .contact-content {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact-grid {
+    padding: 0 24px;
+    margin-bottom: 24px;
+    text-align: center; /* Keeps details & headings centered */
+  }
+
+  /* Left-align copy while centering its container block */
+  .contact-intro {
+    text-align: left;
+    max-width: 400px;  /* Fits nicely on mobile */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .contact-intro:first-of-type {
+    margin-top: 0;
+  }
+
+  .contact-intro:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-label {
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+  }
+
+  .marquee,
+  .sep {
+    height: 60px;
+  }
+}

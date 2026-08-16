@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Out of Phase</title>
+<link rel="stylesheet" href="style-shared.css">
+<link rel="stylesheet" href="style-about.css">
+</head>
+<body class="about-body">
+
+<!-- Mobile Sticky Header -->
+<header class="mobile-header">
+  <button class="menu-toggle-btn" id="menuToggleBtn">Menu</button>
+</header>
+
+<!-- Desktop Navigation (Hidden <= 700px) -->
+<header class="splash-nav desktop-only-nav">
+  <a href="about.html" class="active">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</header>
+
+<!-- Mobile Overlay Drawer (Contains Nav + Footer links) -->
+<div class="mobile-drawer" id="mobileDrawer">
+  
+  <header class="drawer-header">
+    <button class="drawer-close-btn" id="drawerCloseBtn">Close</button>
+  </header>
+
+  <div class="drawer-content">
+    <nav class="drawer-nav">
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="drawer-footer-links">
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="drawer-logo-wrap">
+    <a href="index.html">
+      <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+    </a>
+  </div>
+</div>
+
+<main class="about-content">
+  <div class="about-grid">
+    
+    <div class="about-images">
+      <img src="images/About_1.jpg" alt="Guitar detail">
+      <img src="images/About_2.jpg" alt="Guitar detail">
+      <img src="images/About_3.jpg" alt="Guitar detail">
+      <img src="images/About_4.jpg" alt="Guitar detail">
+      <img src="images/About_5.jpg" alt="Guitar detail">
+      <img src="images/About_6.jpg" alt="Guitar detail">
+      <img src="images/About_7.jpg" alt="Guitar detail">
+    </div>
+
+    <div class="about-text-col">
+      <div class="about-text">
+        <p>
+          OUT OF PHASE is the guitar workshop of Bristol-based João Chaves. I've
+          been playing music for more than 20 years, with the guitar always at the
+          centre of it. When I bought my first guitar, the shop recommended a setup,
+          promising it would make the instrument easier and more enjoyable to play.
+          As a teenager, I had no idea what a setup actually involved, so I trusted
+          their advice. The guitar played better afterwards, but it also felt like a
+          one-size-fits-all approach rather than something tailored to the instrument
+          itself.
+        </p>
+        <p>
+          That experience sparked my curiosity. I started reading books on guitar
+          setup and maintenance, determined to understand what actually makes an
+          instrument play its best. I'd always loved taking things apart to see how
+          they worked, and the guitar was no different. The more I learned, the more
+          I realised that no two instruments are the same. Every guitar responds
+          differently and deserves an individual approach.
+        </p>
+        <p>
+          Later, when I began touring, keeping every instrument performing reliably
+          became essential. We weren't able to have a dedicated guitar technician,
+          so I worked alongside local luthiers, learning the ins and outs and taking
+          responsibility for maintaining the band's guitars on the road.
+        </p>
+        <p>
+          Although I no longer tour, that passion has never left me. Today, every
+          instrument that comes through my workshop is assessed on its own specific
+          caracteristics. Rather than aiming for a standard setup, I focus on understanding
+          what each owner and guitar needs to perform at its best.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Sticky Centered Logo -->
+<div class="mobile-footer-logo">
+  <a href="index.html">
+    <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+  </a>
+</div>
+
+<!-- Desktop Footer (Hidden <= 700px) -->
+<footer class="splash-footer desktop-only-footer">
+  <a href="terms.html" class="splash-footer-left">Terms &amp; Conditions</a>
+  <a href="index.html">
+    <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+  </a>
+  <a href="privacy-policy.html" class="splash-footer-right">Privacy Policy</a>
+</footer>
+
+<script>
+  // 1. Mobile Drawer Toggle Script
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menuToggleBtn');
+    const closeBtn = document.getElementById('drawerCloseBtn');
+    const drawer = document.getElementById('mobileDrawer');
+
+    if (menuBtn && drawer && closeBtn) {
+      menuBtn.addEventListener('click', () => {
+        drawer.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // Freeze background scrolling
+      });
+
+      closeBtn.addEventListener('click', () => {
+        drawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+
+  // 2. Desktop Gallery Alignment Script
+  function alignGalleryToText() {
+    const firstTextElement = document.querySelector('.about-text p:first-child') || document.querySelector('.about-text');
+    const imagesContainer = document.querySelector('.about-images');
+
+    if (firstTextElement && imagesContainer && window.innerWidth > 900) {
+      const textTopDistance = firstTextElement.getBoundingClientRect().top;
+      const manualOffset = +6; 
+
+      imagesContainer.style.paddingTop = `${textTopDistance + manualOffset}px`;
+      imagesContainer.style.paddingBottom = `100px`;
+    } else if (imagesContainer) {
+      // Clears desktop inline padding when switching to mobile view
+      imagesContainer.style.paddingTop = '';
+      imagesContainer.style.paddingBottom = '';
+    }
+  }
+
+  window.addEventListener('load', alignGalleryToText);
+  window.addEventListener('resize', alignGalleryToText);
+  if (document.fonts) {
+    document.fonts.ready.then(alignGalleryToText);
+  }
+</script>
+
+</body>
+</html>

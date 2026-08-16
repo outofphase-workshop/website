@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Out of Phase</title>
+<link rel="stylesheet" href="style-shared.css">
+<link rel="stylesheet" href="style-services.css">
+</head>
+<body class="contact-body">
+
+<!-- Mobile Sticky Header -->
+<header class="mobile-header">
+  <button class="menu-toggle-btn" id="menuToggleBtn">Menu</button>
+</header>
+
+<!-- Desktop Navigation (Hidden <= 700px) -->
+<header class="splash-nav desktop-only-nav">
+  <a href="about.html">About</a>
+  <a href="services.html"class="active">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</header>
+
+<!-- Mobile Overlay Drawer (Contains Nav + Footer links) -->
+<div class="mobile-drawer" id="mobileDrawer">
+  
+  <header class="drawer-header">
+    <button class="drawer-close-btn" id="drawerCloseBtn">Close</button>
+  </header>
+
+  <div class="drawer-content">
+    <nav class="drawer-nav">
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="drawer-footer-links">
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="drawer-logo-wrap">
+    <a href="index.html">
+      <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+    </a>
+  </div>
+</div>
+
+<main class="services-content">
+  <div class="container">
+
+    <div class="services-list">
+      
+      <div class="service-item">
+        <h3 class="service-term">FULL SETUP</h3>
+        <div class="service-popup">
+          <p class="popup-title">FULL SETUP breakdown:</p>
+          <ul>
+            <li>Proper nut height adjustment</li>
+            <li>Neck relief calibration</li>
+            <li>String action height optimization</li>
+            <li>Correct string radius</li>
+            <li>Intonation adjustment</li>
+            <li>Fretboard oiling and cleaning</li>
+            <li>Guitar body cleaning</li>
+            <li>Pickup height customization</li>
+            <li>Potentiometer and switch cleaning</li>
+            <li>Complete restringing (strings sold separately)</li>
+            <li>Hardware inspection and tightening</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">FRET LEVEL</h3>
+        <div class="service-popup">
+          <p class="popup-title">FRET LEVEL breakdown:</p>
+          <ul>
+            <li>Everything included in a Full Setup</li>
+            <li>Fret levelling</li>
+            <li>Fret dressing and re-crowning</li>
+            <li>Fret polish</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">ELECTRONICS CHECK-UP</h3>
+        <div class="service-popup">
+          <p class="popup-title">ELECTRONICS CHECK-UP breakdown:</p>
+          <ul>
+            <li>Diagnosis of crackling, popping, or intermittent sounds</li>
+            <li>Diagnosis of dead signal or no output</li>
+            <li>Inspection of wiring, pots, and switches</li>
+            <li>Cleaning of pots and switches where needed</li>
+            <li>Repair or replacement of faulty components</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">PICKUPS REPLACEMENT</h3>
+        <div class="service-popup">
+          <p class="popup-title">PICKUPS REPLACEMENT breakdown:</p>
+          <ul>
+            <li>Installing pickups of your choice</li>
+            <li>Guidance and recommendations if you're unsure what to go for</li>
+            <li>Height adjustment and setup to suit the new pickups</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">RE-STRING AND CLEANING</h3>
+        <div class="service-popup">
+          <p class="popup-title">RE-STRING AND CLEANING breakdown:</p>
+          <ul>
+            <li>Full restring (strings sold separately)</li>
+            <li>Fretboard cleaning and conditioning</li>
+            <li>Body and hardware cleaning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">GENERAL MAINTENENCE AND ADVICE</h3>
+        <div class="service-popup">
+          <p class="popup-title">GENERAL MAINTENENCE AND ADVICE breakdown:</p>
+          <ul>
+            <li>General health check of your instrument</li>
+            <li>Identifying any issues before they become bigger problems</li>
+            <li>Honest advice on what does (and doesn't) need attention</li>
+            <li>Small adjustments and tune-ups as needed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <h3 class="service-term">CUSTOM REQUESTS</h3>
+        <div class="service-popup">
+          <p class="popup-title">CUSTOM REQUESTS</p>
+          <p>
+            Got something specific in mind? Custom wiring, electronic mods, one-off
+            parts builds, or anything else you can picture for your instrument? I'm always
+            happy to talk it through and see what's possible.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Sticky Centered Logo -->
+<div class="mobile-footer-logo">
+  <a href="index.html">
+    <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+  </a>
+</div>
+
+<!-- Desktop Footer (Hidden <= 700px) -->
+<footer class="splash-footer desktop-only-footer">
+  <a href="terms.html" class="splash-footer-left">Terms &amp; Conditions</a>
+  <a href="index.html">
+    <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+  </a>
+  <a href="privacy-policy.html" class="splash-footer-right">Privacy Policy</a>
+</footer>
+
+<script>
+  // 1. Mobile Drawer Toggle Script
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menuToggleBtn');
+    const closeBtn = document.getElementById('drawerCloseBtn');
+    const drawer = document.getElementById('mobileDrawer');
+
+    if (menuBtn && drawer && closeBtn) {
+      menuBtn.addEventListener('click', () => {
+        drawer.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // Freeze background scrolling
+      });
+
+      closeBtn.addEventListener('click', () => {
+        drawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+</script>
+
+<script>
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  serviceItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      const wasActive = item.classList.contains('is-active');
+      serviceItems.forEach(i => i.classList.remove('is-active'));
+      if (!wasActive) {
+        item.classList.add('is-active');
+      }
+    });
+
+    item.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 700) {
+        serviceItems.forEach(i => i.classList.remove('is-active'));
+        item.classList.add('is-active');
+      }
+    });
+
+    item.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 700) {
+        item.classList.remove('is-active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* ============================
+   LEGAL PAGES (Terms / Privacy)
+============================ */
+
+/* Fixed Header & Footer Overlay for Legal Pages */
+
+.legal-body .splash-nav * {
+  pointer-events: auto;
+}
+
+.legal-body .splash-footer * {
+  pointer-events: auto;
+}
+
+.legal-page {
+  padding: 280px 0 120px; /* Adjusted padding to accommodate fixed navbar/footer */
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.legal-title-col {
+  grid-column: 2 / 7;
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.legal-title {
+  font-family: "OldEnglish";
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.legal-intro {
+  max-width: 640px;
+}
+
+.legal-content-col {
+  grid-column: 9 / 17;
+}
+
+.legal-meta {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.legal-toc {
+  list-style: none;
+  margin: 40px 0 60px;
+}
+
+.legal-toc li {
+  margin-bottom: 10px;
+}
+
+.legal-section {
+  margin-bottom: 48px;
+  scroll-margin-top: 140px;
+}
+
+.legal-section h2 {
+  font-family: "Gothic", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.legal-list {
+  margin: 0 0 16px 20px;
+}
+
+.legal-list li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.legal-page .copy-block {
+  max-width: none;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.legal-page a {
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.legal-page a:hover {
+  opacity: 0.6;
+}
+
+.legal-toc a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.3);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.legal-toc a:hover {
+  text-decoration-color: #000;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .legal-title-col {
+    grid-column: 1 / -1;
+    position: static;
+  }
+  .legal-content-col {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .legal-page {
+    padding: 120px 0 80px;
+  }
+  .legal-grid {
+    padding: 0 20px;
+  }
+  .legal-title {
+    font-size: 2.6rem;
+    padding: 15px 0;
+  }
+
+  .legal-section h2 {
+    font-family: "Gothic", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+  }
+}

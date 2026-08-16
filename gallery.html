@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style-shared.css">
+  <link rel="stylesheet" href="style-gallery.css">
+</head>
+<body class="gallery-body">
+
+  <!-- Mobile Sticky Header -->
+  <header class="mobile-header">
+    <button class="menu-toggle-btn" id="menuToggleBtn">Menu</button>
+  </header>
+
+  <!-- Desktop Navigation (Hidden <= 700px) -->
+  <header class="splash-nav desktop-only-nav">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <!-- Mobile Overlay Drawer (Contains Nav + Footer links) -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    
+    <header class="drawer-header">
+      <button class="drawer-close-btn" id="drawerCloseBtn">Close</button>
+    </header>
+
+    <div class="drawer-content">
+      <nav class="drawer-nav">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="drawer-footer-links">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="drawer-logo-wrap">
+      <a href="index.html">
+        <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+      </a>
+    </div>
+  </div>
+
+  <!-- Gallery Main Section -->
+  <main class="gallery-container">
+    
+    <!-- Intro Text Block -->
+    <div class="gallery-intro-wrap">
+      <p class="copy-block">
+        I'll be honest, I haven't always been the best at documenting my work. 
+        Most instruments that come through the workshop tend to leave again before 
+        I've had the chance to properly capture the finished result, 
+        but it's something I'm making a conscious effort to improve.
+      </p>
+      <p class="copy-block">
+        For now, this gallery offers a glimpse of some of the instruments that have passed
+        through the shop. Each one has had its own journey, and hopefully yours can be here next.
+      </p>
+    </div>
+
+    <!-- Gallery Scroll Wrap -->
+    <div class="gallery-scroll-wrap">
+      <button class="gallery-arrow gallery-arrow-left" aria-label="Scroll left">
+        <img src="images/arrow_hand_left.svg" alt="" class="arrow-icon">
+      </button>
+
+      <div class="gallery-track">
+        <div class="gallery-item">
+          <img src="images/Gallery_1.jpg" alt="Fender Player Duo-Sonic HS">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Player Duo-Sonic HS</p>
+            <p class="gallery-caption-text">
+              Full setup and bridge pickup upgrade for this Duo-Sonic. The owner selected a Seymour
+              Duncan SH-1B '59 Model, and we custom-installed a chrome cover at their request. The
+              guitar now plays effortlessly with a much bolder, classic humbucker tone.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_2.jpg" alt="Fender Player Duo-Sonic HS">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Player Duo-Sonic HS</p>
+            <p class="gallery-caption-text">
+              Full setup and bridge pickup upgrade for this Duo-Sonic. The owner selected a Seymour
+              Duncan SH-1B '59 Model, and we custom-installed a chrome cover at their request. The
+              guitar now plays effortlessly with a much bolder, classic humbucker tone.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_3.jpg" alt="Fender Player Duo-Sonic HS">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Player Duo-Sonic HS</p>
+            <p class="gallery-caption-text">
+              Full setup and bridge pickup upgrade for this Duo-Sonic. The owner selected a Seymour
+              Duncan SH-1B '59 Model, and we custom-installed a chrome cover at their request. The
+              guitar now plays effortlessly with a much bolder, classic humbucker tone.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_4.jpg" alt="Fender Musicmaster">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Musicmaster</p>
+            <p class="gallery-caption-text">
+              This 70s Musicmaster came in with a microphonic pickup and worn upper frets.
+              Since the original was just a Strat pickup, we replaced it with a 4-pole unit
+              from Mojo Pickups UK. The tone is now much fuller, and with the frets leveled,
+              it plays smoothly and consistently.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_5.jpg" alt="Fender Musicmaster">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Musicmaster</p>
+            <p class="gallery-caption-text">
+              This 70s Musicmaster came in with a microphonic pickup and worn upper frets.
+              Since the original was just a Strat pickup, we replaced it with a 4-pole unit
+              from Mojo Pickups UK. The tone is now much fuller, and with the frets leveled,
+              it plays smoothly and consistently.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_6.jpg" alt="Fender Musicmaster">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Musicmaster</p>
+            <p class="gallery-caption-text">
+              This 70s Musicmaster came in with a microphonic pickup and worn upper frets.
+              Since the original was just a Strat pickup, we replaced it with a 4-pole unit
+              from Mojo Pickups UK. The tone is now much fuller, and with the frets leveled,
+              it plays smoothly and consistently.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_7.jpg" alt="Fender Player Duo-Sonic">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Player Duo-Sonic</p>
+            <p class="gallery-caption-text">
+              Full setup and custom modifications for yet another Duo-Sonic.
+              The owner wanted to replace the original plastic nut and so I made
+              a new bone nut to replace the original. Also installed two DPDT switches
+              for series/parallel and in-phase/out-of-phase options.
+            </p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/Gallery_8.jpg" alt="Fender Player Duo-Sonic">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Player Duo-Sonic</p>
+            <p class="gallery-caption-text">
+              Full setup and custom modifications for yet another Duo-Sonic.
+              The owner wanted to replace the original plastic nut and so I made
+              a new bone nut to replace the original. Also installed two DPDT switches
+              for series/parallel and in-phase/out-of-phase options.
+            </p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/Gallery_9.jpg" alt="G&L Fallout Bass">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">G&L Fallout Bass</p>
+            <p class="gallery-caption-text">
+              Full setup and hardware repair for this Fallout Bass.
+              The broken DPDT switch had to be replaced, the nut slots were uneven and had to
+              be recut to lower the action on the low E, and the intonation had to be dialed in. 
+              It now plays cleanly with consistent action.
+            </p>
+          </div>
+        </div>
+       
+        <div class="gallery-item">
+          <img src="images/Gallery_10.jpg" alt="G&L Fallout Bass">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">G&L Fallout Bass</p>
+            <p class="gallery-caption-text">
+              Full setup and hardware repair for this Fallout Bass.
+              The broken DPDT switch had to be replaced, the nut slots were uneven and had to
+              be recut to lower the action on the low E, and the intonation had to be dialed in. 
+              It now plays cleanly with consistent action.
+            </p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/Gallery_11.jpg" alt="G&L Fallout Bass">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">G&L Fallout Bass</p>
+            <p class="gallery-caption-text">
+              Full setup and hardware repair for this Fallout Bass.
+              The broken DPDT switch had to be replaced, the nut slots were uneven and had to
+              be recut to lower the action on the low E, and the intonation had to be dialed in. 
+              It now plays cleanly with consistent action.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gallery_12.jpg" alt="G&L Fallout Bass">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">G&L Fallout Bass</p>
+            <p class="gallery-caption-text">
+              Full setup and hardware repair for this Fallout Bass.
+              The broken DPDT switch had to be replaced, the nut slots were uneven and had to
+              be recut to lower the action on the low E, and the intonation had to be dialed in. 
+              It now plays cleanly with consistent action.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_13.jpg" alt="Squier Affinity Stratocaster">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Squier Affinity Stratocaster</p>
+            <p class="gallery-caption-text">
+              This Strat came to the shop for a bridge upgrade. Owner wanted a steel
+              block and saddles to improve sustain. I noticed uneven frets and sharp
+              ends as well. A fret level and dress was agreed and now the guitar plays
+              with much lower action, buzz free and more sustain.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_14.jpg" alt="Squier Affinity Stratocaster">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Squier Affinity Stratocaster</p>
+            <p class="gallery-caption-text">
+              This Strat came to the shop for a bridge upgrade. Owner wanted a steel
+              block and saddles to improve sustain. I noticed uneven frets and sharp
+              ends as well. A fret level and dress was agreed and now the guitar plays
+              with much lower action, buzz free and more sustain.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_15.jpg" alt="Partscaster Jazzmaster build">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Partscaster Jazzmaster build</p>
+            <p class="gallery-caption-text">
+              A one-off build tailored to the owner's spec. Built with an alder body,
+              all rosewood rosewood neck, and P90 pickups for a warmer, fuller tone. The hardware
+              was provided by the customer and included some Fender and miscelaneous parts.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_16.jpg" alt="Partscaster Jazzmaster build">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Partscaster Jazzmaster build</p>
+            <p class="gallery-caption-text">
+              A one-off build tailored to the owner's spec. Built with an alder body,
+              all rosewood rosewood neck, and P90 pickups for a warmer, fuller tone. The hardware
+              was provided by the customer and included some Fender and miscelaneous parts.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_17.jpg" alt="Partscaster Jazzmaster build">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Partscaster Jazzmaster build</p>
+            <p class="gallery-caption-text">
+              A one-off build tailored to the owner's spec. Built with an alder body,
+              all rosewood rosewood neck, and P90 pickups for a warmer, fuller tone. The hardware
+              was provided by the customer and included some Fender and miscelaneous parts.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_18.jpg" alt="Partscaster Jazzmaster build">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Partscaster Jazzmaster build</p>
+            <p class="gallery-caption-text">
+              A one-off build tailored to the owner's spec. Built with an alder body,
+              all rosewood rosewood neck, and P90 pickups for a warmer, fuller tone. The hardware
+              was provided by the customer and included some Fender and miscelaneous parts.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_19.jpg" alt="Fender Vintera Jaguar">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Vintera Jaguar</p>
+            <p class="gallery-caption-text">
+              Fret level and rewire for this Fender Jaguar.
+              The neck pickup had stopped working and needed a full rewire to bring
+              it back to life. The frets were also levelled and dressed, leaving the
+              guitar playing smoothly across the whole neck.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/Gallery_20.jpg" alt="Fender Vintera Jaguar">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Vintera Jaguar</p>
+            <p class="gallery-caption-text">
+              Fret level and rewire for this Fender Jaguar.
+              The neck pickup had stopped working and needed a full rewire to bring
+              it back to life. The frets were also levelled and dressed, leaving the
+              guitar playing smoothly across the whole neck.
+            </p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="images/Gallery_21.jpg" alt="Fender Vintera Jaguar">
+          <div class="gallery-caption">
+            <p class="gallery-caption-title">Fender Vintera Jaguar</p>
+            <p class="gallery-caption-text">
+              Fret level and rewire for this Fender Jaguar.
+              The neck pickup had stopped working and needed a full rewire to bring
+              it back to life. The frets were also levelled and dressed, leaving the
+              guitar playing smoothly across the whole neck.
+            </p>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <button class="gallery-arrow gallery-arrow-right" aria-label="Scroll right">
+        <img src="images/arrow_hand_right.svg" alt="" class="arrow-icon">
+      </button>
+    </div>
+  </main>
+
+  <!-- Mobile Sticky Centered Logo -->
+  <div class="mobile-footer-logo">
+    <a href="index.html">
+      <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+    </a>
+  </div>
+
+  <!-- Desktop Footer (Hidden <= 700px) -->
+  <footer class="splash-footer desktop-only-footer">
+    <a href="terms.html" class="splash-footer-left">Terms &amp; Conditions</a>
+    <a href="index.html">
+      <img src="images/nav-icon.svg" alt="Out of Phase" class="splash-footer-icon">
+    </a>
+    <a href="privacy-policy.html" class="splash-footer-right">Privacy Policy</a>
+  </footer>
+
+  <script>
+    // 1. Mobile Drawer Toggle Script
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menuToggleBtn');
+      const closeBtn = document.getElementById('drawerCloseBtn');
+      const drawer = document.getElementById('mobileDrawer');
+
+      if (menuBtn && drawer && closeBtn) {
+        menuBtn.addEventListener('click', () => {
+          drawer.classList.add('is-open');
+          document.body.style.overflow = 'hidden'; // Freeze background scrolling
+        });
+
+        closeBtn.addEventListener('click', () => {
+          drawer.classList.remove('is-open');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+
+    // 2. Desktop Gallery Alignment Script
+    function alignGalleryToText() {
+      const firstTextElement = document.querySelector('.about-text p:first-child') || document.querySelector('.about-text');
+      const imagesContainer = document.querySelector('.about-images');
+
+      if (firstTextElement && imagesContainer && window.innerWidth > 900) {
+        const textTopDistance = firstTextElement.getBoundingClientRect().top;
+        const manualOffset = +6; 
+
+        imagesContainer.style.paddingTop = `${textTopDistance + manualOffset}px`;
+        imagesContainer.style.paddingBottom = `100px`;
+      } else if (imagesContainer) {
+        imagesContainer.style.paddingTop = '';
+      }
+    }
+
+    window.addEventListener('load', alignGalleryToText);
+    window.addEventListener('resize', alignGalleryToText);
+    if (document.fonts) {
+      document.fonts.ready.then(alignGalleryToText);
+    }
+  </script>
+
+  <script>
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    serviceItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        const wasActive = item.classList.contains('is-active');
+        serviceItems.forEach(i => i.classList.remove('is-active'));
+        if (!wasActive) {
+          item.classList.add('is-active');
+        }
+      });
+
+      item.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 700) {
+          serviceItems.forEach(i => i.classList.remove('is-active'));
+          item.classList.add('is-active');
+        }
+      });
+
+      item.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 700) {
+          item.classList.remove('is-active');
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Arrow Scroll Handling
+      document.querySelectorAll('.gallery-scroll-wrap').forEach(wrap => {
+        const track = wrap.querySelector('.gallery-track');
+        const leftBtn = wrap.querySelector('.gallery-arrow-left');
+        const rightBtn = wrap.querySelector('.gallery-arrow-right');
+
+        function getScrollAmount() {
+          const firstImg = track.querySelector('img');
+          if (!firstImg) return 450;
+          const style = getComputedStyle(track);
+          const gap = parseFloat(style.gap) || 0;
+          return firstImg.getBoundingClientRect().width + gap;
+        }
+
+        leftBtn.addEventListener('click', () => {
+          track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+        rightBtn.addEventListener('click', () => {
+          track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+      });
+
+      // 2. Mobile Tap-to-Toggle Captions
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      document.addEventListener('click', (e) => {
+        // Execute ONLY on touch screens / mobile pointers
+        if (window.matchMedia('(pointer: coarse)').matches) {
+          const clickedItem = e.target.closest('.gallery-item');
+
+          if (clickedItem) {
+            const isAlreadyActive = clickedItem.classList.contains('is-active');
+
+            // First, clear active state from all items
+            galleryItems.forEach(el => el.classList.remove('is-active'));
+
+            // If it wasn't already open, open it
+            if (!isAlreadyActive) {
+              clickedItem.classList.add('is-active');
+            }
+          } else {
+            // Tapped outside any gallery item
+            galleryItems.forEach(el => el.classList.remove('is-active'));
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
