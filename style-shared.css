@@ -131,7 +131,7 @@ a {
 .splash-footer a.active,
 .splash-footer-left.active,
 .splash-footer-right.active {
-  color: #31FF2F !important; /* Your vivid bright green */
+  color: #31FF2F !important;
   opacity: 1 !important;
   pointer-events: none;
 }
@@ -190,7 +190,7 @@ main,
     background: none;
     border: none;
     font-family: "OldEnglish", serif;
-    font-size: 2.1rem; /* Increased from 1.8rem to 2.2rem (adjust as needed) */
+    font-size: 2.1rem;
     color: #000;
     cursor: pointer;
     padding: 0;
@@ -296,20 +296,20 @@ main,
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px; /* Same vertical gap as .drawer-nav */
+    gap: 12px;
   }
 
   .drawer-footer-links a {
     font-family: "OldEnglish", serif;
-    font-size: 1.8rem; /* Matches main drawer links */
+    font-size: 1.8rem;
     color: #000;
     text-decoration: none;
   }
   
   .drawer-nav a.active,
   .drawer-footer-links a.active {
-    color: #31FF2F !important; /* Your vivid bright green hex code */
-    opacity: 1 !important;     /* OVERRIDES the 0.4 opacity so it isn't washed out/faded */
+    color: #31FF2F !important;
+    opacity: 1 !important;
     pointer-events: none;
   }
 
