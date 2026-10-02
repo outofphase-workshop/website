@@ -8,7 +8,7 @@
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: 100px 20px; /* Protects content from being overlapped by fixed header/footer */
+  padding: 100px 20px;
   box-sizing: border-box;
 }
 
