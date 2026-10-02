@@ -69,12 +69,13 @@
   object-fit: cover;
 }
 
-/* Rock-Solid Fixed Text Column */
+/* Rock-Solid Fixed Text Column (Anchored to Right Grid Area) */
 .about-text-col {
-  grid-column: 12 / 18;
   position: fixed;
   top: 0;
-  bottom: 0;
+  right: max(40px, calc((100vw - 1920px) / 2 + 40px)); /* Respects grid padding & max-width */
+  width: calc((100vw - 80px) * (7 / 18));              /* Matches columns 12 to 18 span */
+  max-width: calc(1840px * (7 / 18));                  /* Clamps at max-width 1920px */
   height: 100vh;
   height: 100dvh;
   display: flex;
