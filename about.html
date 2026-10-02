@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style-shared.css">
 <link rel="stylesheet" href="style-about.css">
 
-  <!-- Favicons -->
+    <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
 <link rel="shortcut icon" href="favicon/favicon.ico">
@@ -88,18 +88,19 @@
           instrument play its best. I'd always loved taking things apart to see how
           they worked, and the guitar was no different. The more I learned, the more
           I realised that no two instruments are the same. Every guitar responds
-          differently and needs an individual approach.
+          differently and deserves an individual approach.
         </p>
         <p>
-          Later, when I started playing in bands, keeping every instrument performing reliably
+          Later, when I began touring, keeping every instrument performing reliably
           became essential. We weren't able to have a dedicated guitar technician,
           so I worked alongside local luthiers, learning the ins and outs and taking
-          responsibility for maintaining the band's instruments in top shape.
+          responsibility for maintaining the band's guitars on the road.
         </p>
         <p>
-          That passion has never left me and today, every instrument that comes through my workshop
-          is assessed on its own specific caracteristics. Rather than aiming for a standard setup,
-          I focus on understanding what each owner and guitar needs to perform at its best.
+          Although I no longer tour, that passion has never left me. Today, every
+          instrument that comes through my workshop is assessed on its own specific
+          caracteristics. Rather than aiming for a standard setup, I focus on understanding
+          what each owner and guitar needs to perform at its best.
         </p>
       </div>
     </div>
@@ -132,7 +133,7 @@
     if (menuBtn && drawer && closeBtn) {
       menuBtn.addEventListener('click', () => {
         drawer.classList.add('is-open');
-        document.body.style.overflow = 'hidden'; 
+        document.body.style.overflow = 'hidden'; // Freeze background scrolling
       });
 
       closeBtn.addEventListener('click', () => {
@@ -152,8 +153,11 @@
       const manualOffset = +6; 
 
       imagesContainer.style.paddingTop = `${textTopDistance + manualOffset}px`;
+      imagesContainer.style.paddingBottom = `100px`;
     } else if (imagesContainer) {
+      // Clears desktop inline padding when switching to mobile view
       imagesContainer.style.paddingTop = '';
+      imagesContainer.style.paddingBottom = '';
     }
   }
 
