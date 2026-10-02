@@ -3,10 +3,11 @@
 ============================ */
 .about-body {
   display: block;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
-  overflow: hidden;
+  /* Allow normal viewport scrolling so hardware handles the wheel input */
+  overflow-y: auto;
 }
 
 /* Fixed Header & Footer Overlay */
@@ -39,9 +40,7 @@
 }
 
 .about-content {
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden;
+  width: 100%;
 }
 
 .about-grid {
@@ -51,25 +50,17 @@
   padding: 0 40px;
   max-width: 1920px;
   margin: 0 auto;
-  height: 100%;
 }
 
-/* Scrollable Gallery Column */
+/* Natural Document Scroll Gallery */
 .about-images {
   grid-column: 1 / 10;
   margin-left: 20px; 
-  height: 100%;
-  overflow-y: auto;
-  scrollbar-width: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
-  padding: 100px 0; /* Prevents text/image overlap under fixed header/footer */
-}
-
-.about-images::-webkit-scrollbar {
-  display: none;
+  padding-bottom: 120px; /* Space for footer clearance */
 }
 
 .about-images img {
@@ -78,19 +69,19 @@
   object-fit: cover;
 }
 
-/* Static Text Column - Vertically Centered */
+/* Rock-Solid Fixed Text Column */
 .about-text-col {
   grid-column: 12 / 18;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-  padding: 80px 0;
-
-  will-change: transform;
-  transform: translateZ(0);
-  contain: layout paint;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .about-text {
