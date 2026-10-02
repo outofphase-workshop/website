@@ -3,7 +3,6 @@
 ============================ */
 
 /* Fixed Header & Footer Overlay for Legal Pages */
-
 .legal-body .splash-nav * {
   pointer-events: auto;
 }
@@ -13,7 +12,7 @@
 }
 
 .legal-page {
-  padding: 280px 0 120px; /* Adjusted padding to accommodate fixed navbar/footer */
+  padding: 280px 0 120px;
 }
 
 .legal-grid {
