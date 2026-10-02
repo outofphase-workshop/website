@@ -30,8 +30,8 @@
   font-size: 0.85rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  max-width: 520px;       /* Adjust this value (e.g., 480px–560px) to your taste */
-  margin-left: auto;     /* Centers the left-aligned paragraph block */
+  max-width: 520px;
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
@@ -128,13 +128,13 @@
   .contact-grid {
     padding: 0 24px;
     margin-bottom: 24px;
-    text-align: center; /* Keeps details & headings centered */
+    text-align: center;
   }
 
   /* Left-align copy while centering its container block */
   .contact-intro {
     text-align: left;
-    max-width: 400px;  /* Fits nicely on mobile */
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     font-size: 0.85rem;
