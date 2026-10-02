@@ -86,7 +86,7 @@
 }
 
 .about-text {
-  max-width: 640px;
+  max-width: 570px;
 }
 
 .about-text p {
@@ -161,9 +161,12 @@
 
   /* 4. Full-Width Text Column */
   .about-text-col {
+    position: relative !important; /* CRITICAL: Takes it out of fixed positioning */
+    top: auto !important;
+    right: auto !important;
+    height: auto !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: auto;
     padding: 20px 20px 60px 20px !important;
     box-sizing: border-box;
   }
