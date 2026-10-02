@@ -165,14 +165,6 @@
   if (document.fonts) {
     document.fonts.ready.then(alignGalleryToText);
   }
-
-  // 3. Desktop Global Scroll Forwarding
-  window.addEventListener('wheel', (e) => {
-    const imagesContainer = document.querySelector('.about-images');
-    if (imagesContainer && window.innerWidth > 900) {
-      imagesContainer.scrollTop += e.deltaY;
-    }
-  }, { passive: true });
 </script>
 
 </body>
