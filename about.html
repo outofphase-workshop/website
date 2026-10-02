@@ -132,7 +132,7 @@
     if (menuBtn && drawer && closeBtn) {
       menuBtn.addEventListener('click', () => {
         drawer.classList.add('is-open');
-        document.body.style.overflow = 'hidden'; // Freeze background scrolling
+        document.body.style.overflow = 'hidden'; 
       });
 
       closeBtn.addEventListener('click', () => {
@@ -152,11 +152,8 @@
       const manualOffset = +6; 
 
       imagesContainer.style.paddingTop = `${textTopDistance + manualOffset}px`;
-      imagesContainer.style.paddingBottom = `100px`;
     } else if (imagesContainer) {
-      // Clears desktop inline padding when switching to mobile view
       imagesContainer.style.paddingTop = '';
-      imagesContainer.style.paddingBottom = '';
     }
   }
 
